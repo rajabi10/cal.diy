@@ -15,7 +15,7 @@ import { buildLegacyRequest } from "@lib/buildLegacyCtx";
 export const getTranslate = async () => {
   const locale = await getLocale(buildLegacyRequest(await headers(), await cookies()));
 
-  return await getTranslation(locale ?? "en", "common");
+  return await getTranslation(locale ?? "fa", "common");
 };
 
 const _generateMetadataWithoutImage = async (
